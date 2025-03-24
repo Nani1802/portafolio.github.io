@@ -3,19 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="flex gap-4 min-h-screen">
+    <div class="flex gap-4 min-h-screen p-4 bg-gray-50">
         <!-- Barra lateral -->
-        <div class="w-1/4 bg-gray-100 p-4">
-          Sidebar
+        <div class="w-1/4 bg-gray-100 p-4 flex flex-col justify-between rounded-lg shadow-md">
+          <!-- Logo y nombre -->
+          <div class="flex items-center gap-2 p-4">
+            <img src="logo.png" alt="Logo" class="w-8 h-8">
+            <span class="text-lg font-semibold">Edu</span>
+          </div>
+      
+          <!-- Menú de navegación -->
+          <ul class="space-y-4">
+            <li class="flex items-center p-3 hover:bg-gray-200 rounded-lg cursor-pointer">
+               <span class="ml-2">Schedule</span>
+            </li>
+            <li class="flex items-center p-3 hover:bg-gray-200 rounded-lg cursor-pointer">
+              <span class="ml-2">Progress</span>
+            </li>
+            <li class="flex items-center p-3 hover:bg-gray-200 rounded-lg cursor-pointer">
+               <span class="ml-2">Messages</span>
+            </li>
+            <li class="flex items-center p-3 hover:bg-gray-200 rounded-lg cursor-pointer">
+               <span class="ml-2">Settings</span>
+            </li>
+          </ul>
+      
+          <!-- Botón de cerrar sesión -->
+          <button class="text-red-500 hover:bg-red-100 p-2 rounded-lg">
+             Logout
+          </button>
         </div>
       
         <!-- Sección principal -->
-        <div class="w-3/4 p-6 bg-white">
-          Contenido Principal
+        <div class="w-3/4 flex flex-col gap-6">
+          <!-- Barra de búsqueda -->
+          <input type="text" placeholder="Buscar..." class="w-full border rounded-lg p-2 shadow-sm">
+      
+          <!-- Tarjeta de bienvenida -->
+          <div class="bg-indigo-600 text-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-bold">Effective Education!</h2>
+            <p>Learning is easy and effective with us. Open the panel and track your progress.</p>
+          </div>
+      
+          <!-- Eventos -->
+          <div class="grid grid-cols-3 gap-4">
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <span class="text-lg font-bold">26.02</span>
+              <p class="text-gray-600">UX/UI Workshop</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <span class="text-lg font-bold">02.03</span>
+              <p class="text-gray-600">English Lecture</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+              <span class="text-lg font-bold">07.03</span>
+              <p class="text-gray-600">Business Lecture</p>
+            </div>
+          </div>
+      
+          <!-- Gráfica de progreso -->
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold">Timing & Progress</h3>
+            <p class="text-gray-600">Aquí podrías insertar una gráfica usando Recharts si estás en React.</p>
+          </div>
+        </div>
+      
+        <!-- Panel derecho (Cursos y Premium) -->
+        <div class="w-1/4 space-y-4">
+          <!-- Lista de cursos -->
+          <div class="space-y-4">
+            <div class="flex items-center justify-between p-4 bg-gray-100 rounded-lg">
+              <span> Art</span>
+              <span class="text-gray-600">35h</span>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-100 rounded-lg">
+              <span> Business</span>
+              <span class="text-gray-600">40h</span>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-100 rounded-lg">
+              <span>Science</span>
+              <span class="text-gray-600">25h</span>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-100 rounded-lg">
+              <span> Mathematics</span>
+              <span class="text-gray-600">15h</span>
+            </div>
+          </div>
+      
+          <!-- Tarjeta de Premium -->
+          <div class="bg-black text-white p-6 rounded-lg flex flex-col items-center">
+            <h3 class="text-lg font-bold">Upgrade to Premium</h3>
+            <p class="text-gray-300 text-sm text-center">Get unlimited access to all features.</p>
+            <button class="mt-4 bg-yellow-400 text-black px-4 py-2 rounded-lg">Upgrade</button>
+          </div>
         </div>
       </div>
+      
 </body>
 </html>

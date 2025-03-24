@@ -7,16 +7,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <<div class="flex gap-4 min-h-screen p-4 bg-gray-50">
-        <!-- Barra lateral -->
+    <div class="flex gap-4 min-h-screen p-4 bg-gray-50">
+        
         <div class="w-1/4 bg-gray-100 p-4 flex flex-col justify-between rounded-lg shadow-md">
-          <!-- Logo y nombre -->
+          <!-- Logo  y el nombre-->
           <div class="flex items-center gap-2 p-4">
-            <img src="curry.jpg" alt="Logo" class="w-8 h-8">
+            <img src="logo.jpg" alt="Logo" class="w-8 h-8">
             <span class="text-lg font-semibold">Edu</span>
           </div>
       
-          <!-- Menú de navegación -->
+          <!-- Menú -->
           <ul class="space-y-4">
             <li class="flex items-center p-3 hover:bg-gray-200 rounded-lg cursor-pointer">
                <span class="ml-2">Schedule</span>
@@ -49,7 +49,7 @@
             <p>Learning is easy and effective with us. Open the panel and track your progress.</p>
           </div>
       
-          <!-- Eventos -->
+          <!-- eventos -->
           <div class="grid grid-cols-3 gap-4">
             <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
               <span class="text-lg font-bold">26.02</span>
@@ -65,14 +65,19 @@
             </div>
           </div>
       
-          <!-- Gráfica de progreso -->
+          <!-- Gráficas -->
           <div class="bg-white p-4 rounded-lg shadow-md">
             <h3 class="text-lg font-semibold">Timing & Progress</h3>
-            <p class="text-gray-600">Aquí podrías insertar una gráfica usando Recharts si estás en React.</p>
+            <div class="bg-white p-6 rounded-lg shadow-md flex items-center gap-4">
+                <img src="barras.jpg" alt="Logo" class="w-8 h-8">
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md flex items-center gap-4">
+                <img src="lineas.jpg" alt="Logo" class="w-8 h-8">
+            </div>
           </div>
         </div>
       
-        <!-- Panel derecho (Cursos y Premium) -->
+        <!-- cursos -->
         <div class="w-1/4 space-y-4">
           <!-- Lista de cursos -->
           <div class="space-y-4">
@@ -91,6 +96,9 @@
             <div class="flex items-center justify-between p-4 bg-gray-100 rounded-lg">
               <span> Mathematics</span>
               <span class="text-gray-600">15h</span>
+            </div>
+            <div>
+
             </div>
           </div>
       

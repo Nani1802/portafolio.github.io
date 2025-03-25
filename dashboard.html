@@ -1,122 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-  <!DOCTYPE html>
-  <html lang="es">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Edu Dashboard</title>
-      <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-gradient-to-br from-purple-100 to-pink-100 min-h-screen flex p-6">
-      
-      <!-- Menú lateral -->
-      <aside class="w-1/5 bg-white p-6 rounded-2xl shadow-md flex flex-col justify-between">
-          <div>
-              <div class="flex items-center gap-3 mb-8">
-                  <img src="logo.jpg" alt="Logo" class="w-10 h-10">
-                  <span class="text-xl font-semibold">Edu</span>
-              </div>
-              <nav class="space-y-4">
-                  <div class="flex items-center p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
-                      <span>Schedule</span>
-                  </div>
-                  <div class="flex items-center p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
-                      <span>Progress</span>
-                  </div>
-                  <div class="flex items-center p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
-                      <span>Messages</span>
-                  </div>
-                  <div class="flex items-center p-3 rounded-lg hover:bg-gray-200 cursor-pointer">
-                      <span>Settings</span>
-                  </div>
-              </nav>
-          </div>
-          <button class="text-red-500 hover:bg-red-100 p-3 rounded-lg">🚪 Logout</button>
-      </aside>
-      
-      <!-- Contenido principal -->
-      <main class="w-3/5 flex flex-col gap-6 px-6">
-          
-          <!-- Barra de búsqueda -->
-          <input type="text" placeholder="Buscar..." class="w-full border rounded-lg p-3 shadow-sm">
-          
-          <!-- Tarjeta de bienvenida -->
-          <div class="bg-indigo-600 text-white p-6 rounded-2xl shadow-md">
-              <h2 class="text-2xl font-bold">Effective education!</h2>
-              <p>Learning is easy and effective with us. Open the panel and track your progress.</p>
-          </div>
-          
-          <!-- Eventos -->
-          <div class="grid grid-cols-3 gap-4">
-              <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-                  <span class="text-lg font-bold">26.02</span>
-                  <p class="text-gray-600">UX/UI Workshop</p>
-              </div>
-              <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-                  <span class="text-lg font-bold">02.03</span>
-                  <p class="text-gray-600">English Lecture</p>
-              </div>
-              <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-                  <span class="text-lg font-bold">07.03</span>
-                  <p class="text-gray-600">Business Lecture</p>
-              </div>
-          </div>
-          
-          <!-- Gráficas -->
-          <div class="bg-white p-6 rounded-lg shadow-md">
-              <h3 class="text-lg font-semibold">Timing & Progress</h3>
-              <div class="flex items-center gap-6">
-                  <div class="w-1/2">
-                      <img src="barras.jpg" alt="Barras" class="w-full h-auto rounded-lg">
-                  </div>
-                  <div class="w-1/2">
-                      <img src="lineas.jpg" alt="Líneas" class="w-full h-auto rounded-lg">
-                  </div>
-              </div>          
-          </div>
-      </main>
-      
-      <!-- Barra lateral derecha -->
-      <aside class="w-1/5 space-y-6">
-          <!-- Cursos -->
-          <div class="space-y-4">
-              <h3 class="text-lg font-semibold">Your Courses</h3>
-              <div class="bg-white p-4 rounded-lg flex justify-between items-center shadow-md">
-                  <span>Art</span>
-                  <span class="text-gray-600">35h</span>
-              </div>
-              <div class="bg-white p-4 rounded-lg flex justify-between items-center shadow-md">
-                  <span>Business</span>
-                  <span class="text-gray-600">40h</span>
-              </div>
-              <div class="bg-white p-4 rounded-lg flex justify-between items-center shadow-md">
-                  <span>Science</span>
-                  <span class="text-gray-600">25h</span>
-              </div>
-              <div class="bg-white p-4 rounded-lg flex justify-between items-center shadow-md">
-                  <span>Mathematics</span>
-                  <span class="text-gray-600">15h</span>
-              </div>
-          </div>
-          
-          <!-- Tarjeta Premium -->
-          <div class="bg-black text-white p-6 rounded-lg flex flex-col items-center">
-              <h3 class="text-lg font-bold">Upgrade to Premium</h3>
-              <p class="text-gray-300 text-sm text-center">Get unlimited access to all features.</p>
-              <button class="mt-4 bg-yellow-400 text-black px-4 py-2 rounded-lg">Upgrade</button>
-          </div>
-      </aside>
-      
-  </body>
-  </html>
-  
+
+<body class="bg-gray-100 p-6">
+  <div class="flex gap-6">
+    <!-- Menú lateral -->
+    <div class="w-1/4 bg-white p-6 rounded-lg shadow-md flex flex-col justify-between">
+      <div>
+        <div class="flex items-center gap-2 mb-6">
+          <img src="logo.jpg" alt="Logo" class="w-10 h-10">
+          <span class="text-xl font-bold">Edu</span>
+        </div>
+        <ul class="space-y-4">
+          <li class="p-3 hover:bg-gray-200 rounded-lg cursor-pointer">Schedule</li>
+          <li class="p-3 hover:bg-gray-200 rounded-lg cursor-pointer">Progress</li>
+          <li class="p-3 hover:bg-gray-200 rounded-lg cursor-pointer">Messages</li>
+          <li class="p-3 hover:bg-gray-200 rounded-lg cursor-pointer">Settings</li>
+        </ul>
+      </div>
+      <button class="mt-6 text-red-500 hover:bg-red-100 p-2 rounded-lg">Logout</button>
+    </div>
+
+    <!-- Sección principal -->
+    <div class="w-3/4 space-y-6">
+      <input type="text" placeholder="Buscar..." class="w-full border rounded-lg p-3 shadow-sm">
+
+      <div class="bg-indigo-600 text-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-bold">Effective Education!</h2>
+        <p>Learning is easy and effective with us. Open the panel and track your progress.</p>
+      </div>
+
+      <div class="grid grid-cols-3 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+          <span class="text-lg font-bold">26.02</span>
+          <p class="text-gray-600">UX/UI Workshop</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+          <span class="text-lg font-bold">02.03</span>
+          <p class="text-gray-600">English Lecture</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+          <span class="text-lg font-bold">07.03</span>
+          <p class="text-gray-600">Business Lecture</p>
+        </div>
+      </div>
+
+      <!-- Gráficas -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-lg font-semibold">Timing & Progress</h3>
+        <div class="flex items-center gap-6 mt-4">
+          <img src="barritas.jpg" alt="Barras" class="w-1/2 h-auto rounded-lg">
+          <img src="lineas.jpg" alt="Líneas" class="w-1/2 h-auto rounded-lg">
+        </div>
+      </div>
+    </div>
+    <!-- cursos -->
+    <div class="w-1/4 space-y-4">
+      <!-- Lista de cursos -->
+      <div class="space-y-4">
+        <div class="flex items-center justify-between p-4 bg-gray-100 rounded-lg">
+          <span> Art</span>
+          <span class="text-gray-600">35h</span>
+        </div>
+        <div class="flex items-center justify-between p-4 bg-gray-100 rounded-lg">
+          <span> Business</span>
+          <span class="text-gray-600">40h</span>
+        </div>
+        <div class="flex items-center justify-between p-4 bg-gray-100 rounded-lg">
+          <span> Science</span>
+          <span class="text-gray-600">25h</span>
+        </div>
+        <div class="flex items-center justify-between p-4 bg-gray-100 rounded-lg">
+          <span> Mathematics</span>
+          <span class="text-gray-600">15h</span>
+        </div>
+      </div>
+
+      <!-- Tarjeta de Premium -->
+      <div class="bg-black text-white p-6 rounded-lg flex flex-col items-center">
+        <h3 class="text-lg font-bold">Upgrade to Premium</h3>
+        <p class="text-gray-300 text-sm text-center">Get unlimited access to all features.</p>
+        <button class="mt-4 bg-yellow-400 text-black px-4 py-2 rounded-lg">Upgrade</button>
+      </div>
+    </div>
+  </div>
+  </div>
 </body>
 </html>
